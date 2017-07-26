@@ -8,7 +8,7 @@ import timeout_decorator
 
 @timeout_decorator.timeout(15)
 def send_push(subject=None, priority=1, body=None):
-	apikey = json.load(open("/home/pi/auto/creds/prowl.json", "rb"))["apikey"]
+	apikey = json.load(open("/home/pi/belleview/creds/prowl.json", "rb"))["apikey"]
 	p = prowlpy.Prowl(apikey)
 	return p.add(subject, priority, body)
 	
