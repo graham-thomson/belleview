@@ -91,6 +91,9 @@ ENV/
 .spyderproject
 .spyproject
 
+# JetBrains
+.idea
+
 # Rope project settings
 .ropeproject
 
